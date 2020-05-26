@@ -1,0 +1,31 @@
+/* General Styles --------------------------------------------- */
+
+body {
+  margin: 0 auto;
+}
+
+
+/* Header Styles --------------------------------------------- */
+header {
+  margin: 0 auto 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 95%;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 3em;
+}
+.instructions {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+ol {
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
