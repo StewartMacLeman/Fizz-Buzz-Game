@@ -17,9 +17,14 @@
       <h1>Fizz / Buzz</h1>
       <div class="instructions">
         <ol>
-          <li>Select the type of game.</li>
-          <li>Hit the start buttons.</li>
-          <li>Hit the reset button to begin again.</li>
+          <li>Select the type of game - "Counter Game" or "Random Game". Then click Begin!</li>
+          <ul>
+            <li>Select "None" for numbers that can't be equally divided by 3 or 5.</li>
+            <li>Select "Fizz" for numbers that can be equally divided by 3.</li>
+            <li>Select "Buzz" for numbers that can be equally divided by 5.</li>
+            <li>Select "Fizz-Buzz" for numbers that can be equally divided by 3 or 5.</li>
+          </ul>
+          <li>Click the "Reset Games" button to start again.</li>
         </ol>
       </div>
     </header>
@@ -35,18 +40,18 @@
       <button type="button" class="btn_class" id="fizz_buzz_btn" disabled>Fizz-Buzz</button>
     </section>
 
-    <section class="answer_display_container">
+    <section class="display_container">
       <p id="answer_display">Choose a game type from below!</p>
     </section>
 
-    <section class="answer_display_container">
-        <button type="button" class="next_btn_class" id="next_btn" disabled>-</button>
-        <button type="button" class="next_btn_class_2" id="next_btn_2">Next Number!</button>
+    <section class="display_container">
+        <button type="button" class="begin_btn_class" id="begin_btn" disabled>-</button>
+        <button type="button" class="next_btn_class" id="next_btn">Next Number!</button>
     </section>
 
     <section class="start_reset_btn_cont">
-      <button type="button" class="btn_class" id="count_start">Start Counter</button>
-      <button type="button" class="btn_class" id="random_start">Start Random</button>
+      <button type="button" class="btn_class" id="count_start">Counter Game</button>
+      <button type="button" class="btn_class" id="random_start">Random Game</button>
       <button type="button" class="btn_class" id="reset_btn">Reset Games</button>
     </section>
 
