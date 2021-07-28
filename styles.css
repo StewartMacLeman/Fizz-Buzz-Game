@@ -1,5 +1,97 @@
-html { font-size: 16px; }
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
-  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+h1 { font-size: 4rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.75rem; }
+p { font-size: 2rem; }
+button { font-size: 1.5rem; }
+li { font-size: 1.5rem; }
+
+h1, h2, h3, p, button, li {
+  font-family: futura, helvetica, serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: .25rem;
+  background-color: none;
+}
+/* Button styles. ----------------------------------- */
+ button {
+   background-color: dodgerblue;
+   border-radius: 10px;
+   box-shadow: 1px 4px;
+ }
+ button:hover {
+   background-color: blue;
+   color: white;
+   cursor: pointer;
+ }
+ /* Header section styles.---------------------------- */
+ .headerStyle {
+   width: 100%;
+   margin-bottom: 1rem;
+   background-color: LightYellow;
+   /* background-color: rgba(128, 128, 128, 0.2); */
+   border-bottom: .25rem solid black;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .headerStyle * {
+   margin-bottom: .5rem;
+ }
+ .titleStyle {
+   color: DarkOrange;
+   /* color: red; */
+   text-shadow: 2px 0px black, 0px 2px black, -1px 0px black, 0px -1px black;
+ }
+ .howToContainer {
+   width: 90%;
+   background-color: white;
+   border: .25rem solid DarkOrange;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .howToContainer * {
+   margin-bottom: .25rem;
+   margin-top: 0;
+ }
+ .howToContainer h2, .divisibleCont h3 {
+   text-decoration: underline;
+ }
+ .playItem {
+   text-align: left;
+   margin-bottom: .15rem;
+ }
+ .divisibleCont {
+   /* border: .15rem solid black; */
+ }
+ .divisibleCont * {
+   padding: .05rem;
+   margin-bottom: .05rem;
+ }
+ .divisibleCont p {
+   font-size: 1.5rem;
+ }
+ .divisibleCont p span {
+   text-decoration: underline;
+ }
+ /* Font size queries.-------------------------------- */
+ @media screen and (max-width: 850px){
+   html { font-size: 12px; }
+ }
+ @media screen and (max-width: 650px){
+   html { font-size: 8px; }
+ }
