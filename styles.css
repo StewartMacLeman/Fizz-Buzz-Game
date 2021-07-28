@@ -88,6 +88,10 @@ h1, h2, h3, p, button, li {
  .divisibleCont p span {
    text-decoration: underline;
  }
+ /* The hide class; used for hiding elements. -----------*/
+ .hide {
+   display: none;
+ }
  /* Font size queries.-------------------------------- */
  @media screen and (max-width: 850px){
    html { font-size: 12px; }
