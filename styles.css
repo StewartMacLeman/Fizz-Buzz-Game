@@ -88,6 +88,23 @@ h1, h2, h3, p, button, li {
  .divisibleCont p span {
    text-decoration: underline;
  }
+ /* The user message and number displays. -------------- */
+ .userDisplay {
+   border: .15rem solid black;
+ }
+ /* The game type selection area. ---------------------- */
+ .gameSelectonCont {
+   border: .15rem solid red;
+ }
+ .gameSelcButtonsCont {
+   display: flex;
+   border: .15rem solid blue;
+ }
+ .gameSelcButtonsCont button {
+   width: 40%;
+   margin-top: .15rem;
+   margin-bottom: .15rem;
+ }
  /* The hide class; used for hiding elements. -----------*/
  .hide {
    display: none;
@@ -98,4 +115,11 @@ h1, h2, h3, p, button, li {
  }
  @media screen and (max-width: 650px){
    html { font-size: 8px; }
+ }
+ /* Buttons media query. -------------------------------- */
+ @media screen and (max-width: 650px){
+   button {
+     border-radius: 4px;
+     box-shadow: .65px 2px;
+   }
  }

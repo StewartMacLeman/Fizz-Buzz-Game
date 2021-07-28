@@ -17,7 +17,7 @@
       <h1 class="titleStyle">Fizz-Buzz</h1>
       <button type="button" id="howToShow">How to Play!</button>
 
-      <!--The drop-down rules section. ///////////////////////////  -->
+      <!--The drop-down how-to section. ///////////////////////////  -->
       <div class="hide" id="howToCont">
         <h2>How to Play!</h2>
         <ol>
@@ -49,9 +49,22 @@
       </div>
     </header>
 
-    <h2>Sub-title Test</h2>
-    <p>This is a paragraph test.</p>
-    <button type="button">This is a button test.</button>
+    <!-- The user message display. ///////////////////////////// -->
+    <p class="userDisplay hide" id=messDis>This is for the messages.</p>
+
+    <!-- The game type selection area. ////////////////////////// -->
+    <div class="gameSelectonCont" id="gameSelcCon">
+      <h2>Select the type of game to play.</h2>
+      <div class="gameSelcButtonsCont">
+        <button type="button" value="normal" id="normBut">Normal</button>
+        <button type="button" value="random" id="randBut">Random</button>
+      </div>
+    </div>
+    <!-- The user number display. ///////////////////////////// -->
+    <p class="userDisplay hide" id=numDis>This is for the number display.</p>
+
+    <!-- Reset the game. /////////////////////////////////////// -->
+    <button type="button" class="hide" id="reset">Reset</button>
 
   </body>
 </html>
