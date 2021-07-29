@@ -7,6 +7,11 @@ html {
 }
 
 body {
+  width: 80%;
+  min-height: 95vh;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  border: .25rem solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +42,15 @@ h1, h2, h3, p, button, li {
    color: white;
    cursor: pointer;
  }
+ .disabledButton {
+   background-color: DarkOrange;
+   color: DarkOrange;
+ }
+ .disabledButton:hover {
+   background-color: DarkOrange;
+   color: DarkOrange;
+   cursor: none;
+ }
  .butWidth {
    width: 25%;
    margin-bottom: .5rem;
@@ -46,7 +60,6 @@ h1, h2, h3, p, button, li {
    width: 100%;
    margin-bottom: 1rem;
    background-color: LightYellow;
-   /* background-color: rgba(128, 128, 128, 0.2); */
    border-bottom: .25rem solid black;
    display: flex;
    flex-direction: column;
@@ -57,7 +70,6 @@ h1, h2, h3, p, button, li {
  }
  .titleStyle {
    color: DarkOrange;
-   /* color: red; */
    text-shadow: 2px 0px black, 0px 2px black, -1px 0px black, 0px -1px black;
  }
  .howToContainer {
@@ -79,9 +91,6 @@ h1, h2, h3, p, button, li {
    text-align: left;
    margin-bottom: .15rem;
  }
- .divisibleCont {
-   /* border: .15rem solid black; */
- }
  .divisibleCont * {
    padding: .05rem;
    margin-bottom: .05rem;
@@ -92,19 +101,19 @@ h1, h2, h3, p, button, li {
  .divisibleCont p span {
    text-decoration: underline;
  }
- /* The user message and number displays. -------------- */
+ /* The user message and number displays. ------------------- */
  .userDisplay {
    margin-bottom: .5rem;
-   border: .15rem solid black;
+   /* border: .15rem solid black; */
  }
- /* The game type selection / choice buttons area. ---------------------- */
+ /* The game type selection / choice buttons area. ------------- */
  .gameSelectonCont, .answerSelectonCont {
    min-width: 493px;
-   border: .15rem solid red;
+   /* border: .15rem solid red; */
  }
  .gameSelcButtonsCont, .gameAnswerButtonsCont {
    display: flex;
-   border: .15rem solid blue;
+   /* border: .15rem solid blue; */
  }
  .gameSelcButtonsCont button, .gameAnswerButtonsCont button {
    width: 40%;
@@ -115,18 +124,18 @@ h1, h2, h3, p, button, li {
  .hide {
    display: none;
  }
- /* Font size queries.-------------------------------- */
+ /* Body and Font size queries.---------------------------------- */
  @media screen and (max-width: 850px){
    html { font-size: 12px; }
- }
- @media screen and (max-width: 650px){
-   html { font-size: 8px; }
+   body { width: 100%; }
  }
  /* Buttons media query. -------------------------------- */
  @media screen and (max-width: 650px){
    button {
      border-radius: 4px;
      box-shadow: .65px 2px;
+     padding-top: 4px;
+     padding-bottom: 4px;
    }
  @media screen and (max-width: 350px){
    .butWidth {
@@ -137,18 +146,21 @@ h1, h2, h3, p, button, li {
  @media screen and (max-width: 850px){
    .gameSelectonCont, .answerSelectonCont {
      min-width: 400px;
-     border: .15rem solid red;
+     /* border: .15rem solid red; */
+     margin-bottom: 2rem;
    }
  }
  @media screen and (max-width: 650px){
    .gameSelectonCont, .answerSelectonCont {
      min-width: 300px;
-     border: .15rem solid red;
+     /* border: .15rem solid red; */
+     margin-bottom: 2rem;
    }
  }
  @media screen and (max-width: 310px){
    .gameSelectonCont, .answerSelectonCont {
      min-width: 200px;
-     border: .15rem solid red;
+     /* border: .15rem solid red; */
+     margin-bottom: 2rem;
    }
  }
