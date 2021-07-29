@@ -37,6 +37,10 @@ h1, h2, h3, p, button, li {
    color: white;
    cursor: pointer;
  }
+ .butWidth {
+   width: 25%;
+   margin-bottom: .5rem;
+ }
  /* Header section styles.---------------------------- */
  .headerStyle {
    width: 100%;
@@ -90,17 +94,19 @@ h1, h2, h3, p, button, li {
  }
  /* The user message and number displays. -------------- */
  .userDisplay {
+   margin-bottom: .5rem;
    border: .15rem solid black;
  }
- /* The game type selection area. ---------------------- */
- .gameSelectonCont {
+ /* The game type selection / choice buttons area. ---------------------- */
+ .gameSelectonCont, .answerSelectonCont {
+   min-width: 493px;
    border: .15rem solid red;
  }
- .gameSelcButtonsCont {
+ .gameSelcButtonsCont, .gameAnswerButtonsCont {
    display: flex;
    border: .15rem solid blue;
  }
- .gameSelcButtonsCont button {
+ .gameSelcButtonsCont button, .gameAnswerButtonsCont button {
    width: 40%;
    margin-top: .15rem;
    margin-bottom: .15rem;
@@ -121,5 +127,28 @@ h1, h2, h3, p, button, li {
    button {
      border-radius: 4px;
      box-shadow: .65px 2px;
+   }
+ @media screen and (max-width: 350px){
+   .butWidth {
+     width: 45%;
+   }
+ }
+ /* The game type selection / choice buttons area media query. --- */
+ @media screen and (max-width: 850px){
+   .gameSelectonCont, .answerSelectonCont {
+     min-width: 400px;
+     border: .15rem solid red;
+   }
+ }
+ @media screen and (max-width: 650px){
+   .gameSelectonCont, .answerSelectonCont {
+     min-width: 300px;
+     border: .15rem solid red;
+   }
+ }
+ @media screen and (max-width: 310px){
+   .gameSelectonCont, .answerSelectonCont {
+     min-width: 200px;
+     border: .15rem solid red;
    }
  }

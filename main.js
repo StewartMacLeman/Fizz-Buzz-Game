@@ -27,7 +27,16 @@ let gameSelectionDiv = document.getElementById("gameSelcCon");
 let normalGameButton = document.getElementById("normBut");
 let randomGameButton = document.getElementById("randBut");
 let gameType = "";
+let number = 0;
 
+let answerButtonsDiv = document.getElementById("answerSelcCon");
+let fizzButton = document.getElementById("fizzBut");
+let buzzButton = document.getElementById("buzzBut");
+let fizzBuzzButton = document.getElementById("fizzBuzzBut");
+let noneButton = document.getElementById("noneBut");
+
+// play button is used to start and play another round.
+let playButton = document.getElementById("play");
 let resetButton = document.getElementById("reset");
 
 // Game selection functions. -----------------------------
@@ -42,7 +51,29 @@ function selectGame(e){
     gameSelectionDiv.classList.add("hide");
     messageDisplay.classList.remove("hide");
     numberDisplay.classList.remove("hide");
+
+    answerButtonsDiv.classList.remove("hide");
+    answerButtonsDiv.classList.add("answerSelectonCont");
+
+    playButton.classList.remove("hide");
     resetButton.classList.remove("hide");
+}
+// Answer buttons functions. --------------------------
+fizzButton.addEventListener("click", testFunction);
+buzzButton.addEventListener("click", testFunction);
+fizzBuzzButton.addEventListener("click", testFunction);
+noneButton.addEventListener("click", testFunction);
+
+function testFunction(e){
+  let buttonText = e.target.textContent;
+  console.log(buttonText);
+}
+// Main game playing functions. ------------------------
+playButton.addEventListener("click", startGame);
+
+function startGame(e){
+  let buttonText = e.target.textContent;
+  console.log(buttonText);
 }
 
 // Reset the game function. ----------------------------
@@ -50,10 +81,16 @@ resetButton.addEventListener("click", resetGame);
 
 function resetGame(){
   gameType = "";
+  number = 0;
 
   gameSelectionDiv.classList.remove("hide");
   messageDisplay.classList.add("hide");
   numberDisplay.classList.add("hide");
+
+  answerButtonsDiv.classList.add("hide");
+  answerButtonsDiv.classList.remove("choiceSelectonCont");
+
+  playButton.classList.add("hide");
   resetButton.classList.add("hide");
 
 }
