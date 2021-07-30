@@ -34,26 +34,21 @@ h1, h2, h3, p, button, li {
 /* Button styles. ----------------------------------- */
  button {
    background-color: dodgerblue;
-   border-radius: 10px;
-   box-shadow: 1px 4px;
+   border-radius: 8px;
+   box-shadow: 1px 3px;
  }
  button:hover {
    background-color: blue;
    color: white;
    cursor: pointer;
  }
- .disabledButton {
-   background-color: DarkOrange;
-   color: DarkOrange;
- }
- .disabledButton:hover {
-   background-color: DarkOrange;
-   color: DarkOrange;
-   cursor: none;
- }
  .butWidth {
    width: 25%;
    margin-bottom: .5rem;
+ }
+ /* Class hides the "Next Number" button. -------------- */
+ .disabledButton {
+   visibility: hidden;
  }
  /* Header section styles.---------------------------- */
  .headerStyle {
@@ -103,17 +98,16 @@ h1, h2, h3, p, button, li {
  }
  /* The user message and number displays. ------------------- */
  .userDisplay {
-   margin-bottom: .5rem;
-   /* border: .15rem solid black; */
+   padding-left: .5rem;
+   padding-right: 1rem;
+   margin-bottom: 1rem;
  }
  /* The game type selection / choice buttons area. ------------- */
  .gameSelectonCont, .answerSelectonCont {
    min-width: 493px;
-   /* border: .15rem solid red; */
  }
  .gameSelcButtonsCont, .gameAnswerButtonsCont {
    display: flex;
-   /* border: .15rem solid blue; */
  }
  .gameSelcButtonsCont button, .gameAnswerButtonsCont button {
    width: 40%;
@@ -124,21 +118,35 @@ h1, h2, h3, p, button, li {
  .hide {
    display: none;
  }
- /* Body and Font size queries.---------------------------------- */
+ /* Body and Font size queries.-------------------------- */
  @media screen and (max-width: 850px){
    html { font-size: 12px; }
+ }
+ @media screen and (max-width: 550px){
    body { width: 100%; }
+   p { font-size: 1.75rem; }
  }
  /* Buttons media query. -------------------------------- */
- @media screen and (max-width: 650px){
+ @media screen and (max-width: 850px){
    button {
      border-radius: 4px;
      box-shadow: .65px 2px;
-     padding-top: 4px;
-     padding-bottom: 4px;
+     padding-top: 6px;
+     padding-bottom: 6px;
+   }
+   .butWidth {
+     width: 35%;
    }
  @media screen and (max-width: 350px){
    .butWidth {
+     width: 45%;
+   }
+ }
+ @media screen and (max-width: 320px){
+   button { font-size: 1.25rem; }
+
+   .gameSelectonCont button, .answerSelectonCont button {
+     margin-bottom: .65rem;
      width: 45%;
    }
  }
@@ -146,21 +154,17 @@ h1, h2, h3, p, button, li {
  @media screen and (max-width: 850px){
    .gameSelectonCont, .answerSelectonCont {
      min-width: 400px;
-     /* border: .15rem solid red; */
      margin-bottom: 2rem;
    }
  }
  @media screen and (max-width: 650px){
    .gameSelectonCont, .answerSelectonCont {
      min-width: 300px;
-     /* border: .15rem solid red; */
      margin-bottom: 2rem;
    }
  }
  @media screen and (max-width: 310px){
    .gameSelectonCont, .answerSelectonCont {
      min-width: 200px;
-     /* border: .15rem solid red; */
-     margin-bottom: 2rem;
    }
  }

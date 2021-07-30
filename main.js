@@ -62,6 +62,7 @@ function selectGame(e){
 
 // Main game playing functions. ---------------------------------------
 playButton.addEventListener("click", startGame);
+
 // Submits the answers. ------------------------------------------------
 fizzButton.addEventListener("click", answerSubmitted);
 buzzButton.addEventListener("click", answerSubmitted);
@@ -73,7 +74,7 @@ function answerSubmitted(e){
   submitted_answer = buttonClicked;
   gameLogic();
 }
-// Hiding the submit buttons.---------------------------------
+// Hides the submit buttons.----------------------------------
 function hideSubmitAnswerButtons(){
   answerButtonsDiv.classList.add("hide");
   answerButtonsDiv.classList.remove("answerSelectonCont");
@@ -87,7 +88,7 @@ function playButtonOn(){
   playButton.disabled = false;
   playButton.classList.remove("disabledButton");
 }
-// Generates / updates the numbers. -------------------------------------
+// Generates / updates the numbers. -----------------------------
 function generateNumber(){
   if (gameType == "normal"){
     number += 1;
@@ -148,7 +149,7 @@ function gameLogic(){
   }
 }
 
-// Reset the game. --------------------------------------------------
+// Resets the game. --------------------------------------------------
 resetButton.addEventListener("click", resetGame);
 
 function resetGame(){
