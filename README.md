@@ -2,7 +2,7 @@
 
 This web-application is a version of the game: Fizz-Buzz.
 
-## Build with:
+## Built with:
 * JavaScript
 * CSS
 * HTML
